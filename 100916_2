@@ -1,0 +1,13 @@
+  544  strings -t apa.txt
+  545  grep i$ apa.txt
+  546  cut -d " " -f1 apa.txt
+  547  cut -d " " -f2 apa.txt
+  548  paste -d " " -f2 apa.txt
+  549  paste coba
+  550  ipconfig
+  551  sudo ipconfig
+  552  awk -F" "'{print $1}' apa.txt
+  553  awk -F"cowok"'{print $1}' apa.txt
+  554  man awk
+  555  awk -F":"/m264/'{print $1}' /etc/passwd
+  556  history
