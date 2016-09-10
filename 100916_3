@@ -1,0 +1,13 @@
+  557  find -iname "apa.txt"
+  558  find ~ -empty
+  559  awk '{print $2,$3;)' apa.txt
+  560  sort apa.txt
+  561  sort -r apa.txt
+  562  printf("%d",NF)
+  563  awk -F"  "printf{("%d",NF)}
+  564  awk -F"  "{printf("%d",NF)}
+  565  uniq apa.txt
+  566  wc -n 2 apa.txt
+  567  wc -c apa.txt
+  568  wc -m apa.txt
+  569  history
