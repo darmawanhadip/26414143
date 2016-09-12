@@ -1,0 +1,9 @@
+    1  ls -al
+    2  cd ..
+    3  ls -al
+    4  find --help
+    5  find -iname "cobased.txt" 
+    6  find ~ -empty 
+    7  awk '{print $2,$3;)' apa.txt 
+    8  awk '{print $2,$3;}' apa.txt 
+    9  history
