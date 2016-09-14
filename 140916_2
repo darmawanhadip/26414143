@@ -1,0 +1,5 @@
+  581  vi perl.pl
+  582  perl perl.pl
+  583  echo "mencoba user input"
+  584  history
+
