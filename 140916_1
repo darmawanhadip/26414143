@@ -1,0 +1,11 @@
+  570  vi simple.py
+  571  bash simple.py
+  572  vi perl.pl
+  573  perl perl.pl
+  574  chmod u+x perl.pl
+  575  perl -w perl.pl
+  576  perl -Mdiagnostics ./perl.pl
+  577  vi perl.pl
+  578  perl perl.pl
+  579  echo "mencoba program sederhana"
+  580  history
