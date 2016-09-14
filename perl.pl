@@ -28,3 +28,11 @@ if ($line eq "\n") {
 
 chomp($line);
 chomp($line = <STDIN>);
+
+--3
+$count = 0;
+while ($count < 10) {
+    $count += 2;
+    print "count is now $count\n";
+}
+
