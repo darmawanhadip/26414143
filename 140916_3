@@ -1,0 +1,4 @@
+  585  vi perl.pl
+  586  perl perl.pl
+  587  echo "mencoba while"
+  588  history
