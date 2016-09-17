@@ -1,0 +1,5 @@
+
+  602  vi apa1.pl
+  603  perl apa1.pl
+  604  echo "coba grouping"
+  605  history
