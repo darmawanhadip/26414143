@@ -29,3 +29,18 @@ if (/y(.)(.)\2\1/) { # matches 'abba'
 if (/y((.)(.)\3\2) d\1/) {
     print "It matched!\n";
 }
+
+$_ = "aa11bb";
+if (/(.)\111/) {
+    print "It matched!\n";
+}
+if (/(.)\g{1}11/) {
+    print "It matched!\n";
+}
+if (/(.)\g{–1}11/) { # relative back reference
+    print "It matched!\n";
+}
+$_ = "xaa11bb";
+if (/(.)(.)\g{–1}11/) {
+    print "It matched!\n";
+} 
