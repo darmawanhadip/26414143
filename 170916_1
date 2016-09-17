@@ -1,0 +1,11 @@
+  589  vi perl.pl
+  590  vi apa1.txt
+  591  rm apa1.txt
+  592  ls
+  593  vi apa1.pl
+  594  vi apa.pl
+  595  vi perl.pl
+  596  vi apa1.pl
+  597  perl apa1.pl
+  598  echo "cobain simple pattenrs dan unicode properties"
+  599  history
