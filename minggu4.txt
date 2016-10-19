@@ -31,3 +31,22 @@ print "Fred wants a $1\n";
 	print "Kurs jual : $kurs[1]\n";
 	$selisih=$kurs[1]-$kurs[0];
 	print "Selisih : $selisih\n";
+
+#!/usr/bin/perl -w
+curl -o coba.txt http://cubnetwork.com
+sed -ne '/^{<}\{>}$/,/{!}!/p' coba.txt
+
+#!/usr/bin/perl -w
+print "Masukkan Kata : ";
+$str = <STDIN>;
+print "Masukkan Banyak Kata : ";
+$numb = <STDIN>;
+
+chomp ($numb);
+
+$i=0;
+while($i<$numb)
+{
+$i += 1;
+print "$str";
+}
