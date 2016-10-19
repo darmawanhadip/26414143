@@ -1,0 +1,23 @@
+#!/usr/bin/perl
+	$text = "saya cenius sanjaya nrp 26414040";
+	$n = 0;
+	while($text =~ /(\w+)/g){
+	print $1, "\n";
+	$n++;
+	}
+	print "Total = $n kata.\n";
+  
+  #!/usr/bin/perl
+$pass = <STDIN>;
+if($pass =~ /^$/)
+{
+ print "Isi Password!\n";
+}
+
+if($pass !~ /^\w{5,8}$/) {
+ print "Password hanya boleh 5-8 huruf, angka, dan _!\n";
+}
+
+#!/usr/bin/perl
+$alamat = strupper($alamat);
+$alamat = lstrim($alamat);
