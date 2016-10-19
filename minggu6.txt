@@ -12,4 +12,23 @@ luas = p * l
 print "maka luas persegi panjang adalah : %d" % luas
 
 #!/usr/bin/perl -w
-echo "Hello Cen" | mail -s "Coba" m26414040@john.petra.ac.id
+echo "Hello Cen" | mail -s "Coba" m26414143@john.petra.ac.id
+
+#!/bin/sh
+
+awk 'BEGIN {print "Menampilkan baris terdapat kata dgn keyword 1 dan keyworad 2"}'
+sed -ne '/^Ayam/,/Pecel/p' makanan.csv
+
+awk 'BEGIN {print "Menampilkan baris dgn kata keywoard dan menampilkan 2 baris dibawah baris tsb"}'
+sed -ne '/^Ayam/,+2p' makanan.csv
+
+#!/bin/sh
+
+awk 'BEGIN {print "Menampilkan baris yang terdapat kata keywoard"}'
+sed -n '/ayam/p' makanan.csv
+
+awk 'BEGIN {print "Menampilkan baris yang diawali keywoard"}'
+sed -n -e '/^ayam/p' makanan.csv
+
+awk 'BEGIN {print "Menampilkan baris yang diakhiri keywoard"}'
+sed -n -e '/goreng$/p' makanan.csv
