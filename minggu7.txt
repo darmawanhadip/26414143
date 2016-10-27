@@ -1,0 +1,39 @@
+#!/usr/bin/perl -w
+print "Masukkan Kata : ";
+$str = <STDIN>;
+print "Masukkan Banyak Kata : ";
+$numb = <STDIN>;
+
+chomp ($numb);
+
+$i=0;
+while($i<$numb)
+{
+$i += 1;
+print "$str";
+}
+
+#!/usr/bin/perl
+print "What file would you like to read from?\n";
+chomp (my $filename = <STDIN>);
+
+open my $file, "<", $filename or die "Can't open '$filename' for reading: $^E\n";
+
+my %chars;
+while(<$file>) {
+    $_ = lc($_); # convert everything to lowercase
+    my @characters = split (//, $_);  # Store list of characters in an array
+    foreach (@characters) {
+        if(/\w/) {                    # Ignore all characters except letters and numbers
+            $chars{$_}++;
+        }
+    }
+}
+close $file;
+foreach my $key (sort keys %chars) {
+    print "$key = $chars{$key}\n";
+}
+
+#!/usr/bin/perl -w
+curl -o coba.txt http://cubnetwork.com
+sed -ne '/^{<}\{>}$/,/{!}!/p' coba.txt
