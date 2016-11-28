@@ -1,0 +1,50 @@
+#!/usr/bin/python
+import random
+
+guesses_made = 0
+name = raw_input('Hello! What is your name?\n')
+number = random.randint(1, 20)
+print 'Well, {0}, I am thinking of a number between 1 and 20.'.format(name)
+while guesses_made < 6:
+    guess = int(raw_input('Take a guess: '))
+    guesses_made += 1
+    if guess < number:
+        print 'Your guess is too low.'
+    if guess > number:
+        print 'Your guess is too high.'
+    if guess == number:
+        break
+if guess == number:
+    print 'Good job, {0}! You guessed my number in {1} guesses!'.format(name, guesses_made)
+else:
+    print 'Nope. The number I was thinking of was {0}'.format(number)
+    
+    #!/usr/bin/python
+
+# XML/HTML parsing (using Python 2.5 or third-party library) 
+
+dinner_recipe = '''<html><body><table>
+<tr><th>amt</th><th>unit</th><th>item</th></tr>
+<tr><td>24</td><td>slices</td><td>baguette</td></tr>
+<tr><td>2+</td><td>tbsp</td><td>olive oil</td></tr>
+<tr><td>1</td><td>cup</td><td>tomatoes</td></tr>
+<tr><td>1</td><td>jar</td><td>pesto</td></tr>
+</table></body></html>'''
+
+import xml.etree.ElementTree as etree
+tree = etree.fromstring(dinner_recipe)
+
+pantry = set(['olive oil', 'pesto'])
+for ingredient in tree.getiterator('tr'):
+    amt, unit, item = ingredient
+    if item.tag == "td" and item.text not in pantry:
+        print "%s: %s %s" % (item.text, amt.text, unit.text)
+        
+        #!/usr/bin/perl
+$filename = "webpetra.html";
+open FILE, $filename or die "Can't open file '$filename'";
+foreach $_ (<FILE>)
+{
+ m/<([^!][a-z]+)*>/gi;
+ print $&;
+}
